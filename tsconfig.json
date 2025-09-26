@@ -5,9 +5,9 @@
     "jsx": "react-jsx",
     "baseUrl": "./",
     "paths": {
-      "@/src/*": ["src/*"],
-      "@/assets/*": ["src/assets/*"]
+      "@/src/*": ["./src/*"],
+      "@/assets/*": ["./src/assets/*"]
     }
   },
-  "include": ["src/**/*", "entrypoints/**/*", ".wxt"]
+  "include": ["src/**/*", "src/entrypoints/**/*", ".wxt"]
 }

@@ -1,5 +1,5 @@
-import { JSX } from "react"
+import { JSX } from 'react';
 
 export const DashboardPage = (): JSX.Element => {
-  return <div>Dashboard</div>
-}
+  return <div>Dashboard</div>;
+};

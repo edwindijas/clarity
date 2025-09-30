@@ -10,7 +10,7 @@ import react from 'eslint-plugin-react'
 import eslintImport from 'eslint-plugin-import'
 import filesRulesMatch from 'eslint-plugin-filename-rules'
 
-export default tseslint.config({ ignores: ['dist', 'scripts', '**/*.stories.tsx'] }, {
+export default tseslint.config({ ignores: ['src/stories', 'dist', 'scripts', '**/*.stories.tsx'] }, {
   settings: { react: { version: '18.3' } },
   extends: [js.configs.recommended, ...tseslint.configs.strictTypeChecked],
   files: ['**/*.{ts,tsx}'],
@@ -18,7 +18,7 @@ export default tseslint.config({ ignores: ['dist', 'scripts', '**/*.stories.tsx'
     ecmaVersion: 2020,
     globals: globals.browser,
     parserOptions: {
-      project: ['./tsconfig.app.json'],
+      project: ['./tsconfig.json'],
       tsconfigRootDir: import.meta.dirname,
     },
   },

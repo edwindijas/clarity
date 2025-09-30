@@ -1,5 +1,6 @@
-import { Outlet } from "react-router";  
+import { JSX } from 'react';
+import { Outlet } from 'react-router';
 
-export const MainShell = () => <div>
-    <Outlet />
+export const MainShell = (): JSX.Element => <div>
+  <Outlet />
 </div>;

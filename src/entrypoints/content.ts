@@ -1,9 +1,10 @@
-import { appEntry } from "src/entry";
+import { appEntry } from 'src/entry';
 
+// eslint-disable-next-line import/no-default-export, @typescript-eslint/no-confusing-void-expression
 export default defineContentScript({
-  "matches": ["<all_urls>"],
+  'matches': ['<all_urls>'],
   main () {
-    appEntry('/', "my-extension-entrypoint",);
+    appEntry('', 'clarity-content-script-container');
   },
   run_at: 'document_end',
 });

@@ -9,7 +9,7 @@ export const appEntry = (startPath: string, id: string): void => {
     throw new Error(`No container found with id: ${id}`);
   }
   const root = ReactDOM.createRoot(container);
-  root.render(<App startPath={startPath} target={shadow} />);
+  root.render(<App target={shadow} />);
 };
 
 export const createEntry = (id: string): { container?: HTMLDivElement, shadow: ShadowRoot } => {

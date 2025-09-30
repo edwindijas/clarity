@@ -1,11 +1,12 @@
 import { JSX } from 'react';
-import { StyleSheetManager, ThemeProvider } from 'styled-components';
+import { ThemeProvider } from 'src/common/theme';
+import { StyleSheetManager } from 'styled-components';
 
 import { Router } from './router';
 
 export const App = ({ target }: { target?: ShadowRoot }): JSX.Element =>
   <StyleSheetManager target={target}>
-    <ThemeProvider theme={{}}>
+    <ThemeProvider >
       <Router />
     </ThemeProvider>
   </StyleSheetManager>;

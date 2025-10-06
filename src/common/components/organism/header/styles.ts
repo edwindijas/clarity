@@ -34,6 +34,7 @@ export const StyledButton = styled.div`
 export const StyledWorkspaceButton = styled(StyledButton).attrs({ as: 'button' })`
   width: auto;
   padding: 0 1rem;
+  border-radius: .5rem;
 `;
 
 export const StyledLogoButton = styled(StyledButton).attrs({ as: 'button' })`

@@ -10,6 +10,7 @@ export const Header = (): JSX.Element => <StyledHeader>
   <StyledHeaderContent>
     <StyledLogoButton><LogoIcon /></StyledLogoButton>
     <StyledWorkspaceButton>Workspace</StyledWorkspaceButton>
+    <StyledWorkspaceButton>Recent</StyledWorkspaceButton>
   </StyledHeaderContent>
   <StyledHeaderContent>
     <StyledButton><UserIcon /></StyledButton>

@@ -30,6 +30,11 @@ export const createEntry = (id: string): { container?: HTMLDivElement, shadow: S
 };
 
 export const resetStyles = `
+  ::shadow {
+    font-size: 10px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
   * {
     margin: 0;
     padding: 0;
@@ -41,6 +46,11 @@ export const resetStyles = `
     background: transparent;
     box-sizing: border-box;
   }
+
+  button {
+    cursor: pointer;
+  }
+
   @media (prefers-reduced-motion: no-preference) {
     html {
       interpolate-size: allow-keywords;

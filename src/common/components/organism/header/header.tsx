@@ -9,7 +9,7 @@ import { StyledButton, StyledCloseButton, StyledHeader, StyledHeaderContent, Sty
 export const Header = (): JSX.Element => <StyledHeader>
   <StyledHeaderContent>
     <StyledLogoButton><LogoIcon /></StyledLogoButton>
-    <StyledWorkspaceButton>Workspace Selector</StyledWorkspaceButton>
+    <StyledWorkspaceButton>Workspace</StyledWorkspaceButton>
   </StyledHeaderContent>
   <StyledHeaderContent>
     <StyledButton><UserIcon /></StyledButton>

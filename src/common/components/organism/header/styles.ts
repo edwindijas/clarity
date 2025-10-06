@@ -4,7 +4,11 @@ export const StyledHeader = styled.header`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.8rem;
+  padding: 0.6rem;
+  border-radius: 3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 4px 16px rgba(42, 51, 81, 0.08);
+  backdrop-filter: blur(40px);
 `;
 
 export const StyledHeaderContent = styled.div`
@@ -14,23 +18,22 @@ export const StyledHeaderContent = styled.div`
 `;
 
 export const StyledButton = styled.div`
-  background-color: #E9EBEF;
-  width: 3rem;
-  height: 3rem;
+  background-color: #ffffff;
+  width: 2.5rem;
+  height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 0.1rem solid #D8DADC;
   padding: 0.6rem;
   fill: #2A3351;
-  border-radius: 50%;
+  border-radius: 3rem;
   color: #2A3351;
+  box-shadow: 0px 4px 16px rgba(42, 51, 81, 0.08);
 `;
 
 export const StyledWorkspaceButton = styled(StyledButton).attrs({ as: 'button' })`
   width: auto;
   padding: 0 1rem;
-  border-radius: 0.5rem;
 `;
 
 export const StyledLogoButton = styled(StyledButton).attrs({ as: 'button' })`

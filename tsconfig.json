@@ -6,8 +6,10 @@
     "baseUrl": "./",
     "paths": {
       "@/src/*": ["./src/*"],
-      "@/assets/*": ["./src/assets/*"]
+      "@/assets/*": ["./src/assets/*"],
+      "@/icons": ["material-design-icons/svg"]
     }
   },
-  "include": ["src/**/*", "src/entrypoints/**/*", ".wxt"]
+  "include": ["src/**/*", "src/entrypoints/**/*", ".wxt", "wxt.config.ts"],
+  "exclude": ["node_modules", ".output", "build", "scripts"]
 }
